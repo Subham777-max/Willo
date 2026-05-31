@@ -15,7 +15,7 @@ spec:
         app: sandbox
     spec:
       containers:
-      - image:  sandbox:latest
+      - image:  sandboxv1:latest
         imagePullPolicy: IfNotPresent
         name:  main-sandbox-container
         resources:
@@ -39,4 +39,4 @@ spec:
           timeoutSeconds: 10      
         ports:
         - containerPort:  3000
-          name:  main-sandbox-port
+          name:  main-sandbox
