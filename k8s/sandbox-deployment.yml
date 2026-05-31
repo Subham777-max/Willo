@@ -14,8 +14,9 @@ spec:
       labels:
         app: sandbox
     spec:
+      serviceAccountName:  resource-manager
       containers:
-      - image:  sandboxv1:latest
+      - image:  sandboxv1:v20260531-1555
         imagePullPolicy: IfNotPresent
         name:  main-sandbox-container
         resources:
